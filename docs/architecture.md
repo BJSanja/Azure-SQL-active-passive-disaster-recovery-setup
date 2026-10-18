@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document describes a lab architecture for Azure SQL Database disaster recovery across East US 2 and Central US. The primary database handles normal read/write traffic; the geo-secondary is the recovery target.
+This document describes a project architecture for Azure SQL Database disaster recovery across East US 2 and Central US. The primary database handles normal read/write traffic; the geo-secondary is the recovery target.
 
 Logical architecture
 ```text
