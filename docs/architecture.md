@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document describes a project architecture for Azure SQL Database disaster recovery across East US 2 and Central US. The primary database handles normal read/write traffic; the geo-secondary is the recovery target.
+This document describes a project architecture for Azure SQL Database disaster recovery across East Asia and Southeast Asia. The primary database handles normal read/write traffic; the geo-secondary is the recovery target.
 
 Logical architecture
 ```text
@@ -14,23 +14,23 @@ Logical architecture
                               |
                               v
                   Current primary SQL database
-                         East US 2
+                         East Asia
                               |
                   Asynchronous geo-replication
                               |
                               v
                     Geo-secondary database
-                         Central US
+                         Southeast Asia
 ```
-After a successful failover, the Central US database can become primary and the listener routes new connections to the current primary. Applications should use the failover-group read/write listener rather than hard-coding a regional server name.
+After a successful failover, the Southeast Asia database can become primary and the listener routes new connections to the current primary. Applications should use the failover-group read/write listener rather than hard-coding a regional server name.
 
 ## Components
 
 | Component | Role |
 |---|---|
-| East US 2 SQL logical server | Original primary region |
+| East Asia 2 SQL logical server | Original primary region |
 | Primary Azure SQL database | Serves normal read/write workload |
-| Central US SQL logical server | Recovery region |
+| Southeast Asia SQL logical server | Recovery region |
 | Geo-secondary database | Replicated recovery copy |
 | Auto-Failover Group | Manages the relationship and listener endpoint |
 | Read/write listener | Stable connection endpoint for applications |
