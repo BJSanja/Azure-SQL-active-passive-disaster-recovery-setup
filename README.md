@@ -4,7 +4,7 @@ Azure SQL Database active-passive disaster recovery setup using geo-replication,
 > **Status:** 
 This project documents an active-passive disaster recovery setup across two Azure regions. The primary database serves normal read/write traffic, while a geo-secondary database provides a recovery target.
 >
-##Architecture
+## Architecture
 ```text
                   Application / SQL Client
                             |
