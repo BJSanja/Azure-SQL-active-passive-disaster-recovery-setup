@@ -26,7 +26,7 @@ The failover-group read/write listener is the stable application endpoint. After
 
 ## Goals
 
-Configure a primary Azure SQL database and a secondary in another region.
+* Configure a primary Azure SQL database and a secondary in another region.
 Configure and inspect the failover group.
 Identify the read/write listener endpoint.
 Perform a planned failover.
