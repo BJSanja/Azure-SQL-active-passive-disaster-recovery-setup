@@ -43,5 +43,6 @@ SELECT
 
 ## 7. Optional failback
 
-Suggested filenames: `01-primary-overview.png`, `02-secondary-overview.png`, `03-failover-group-health.png`. Only include screenshots from your own Azure environment.
+Confirm both databases are healthy and synchronized.
+
 
