@@ -1,5 +1,5 @@
 # Azure-SQL-active-passive-disaster-recovery-setup
-Azure SQL Database active-passive disaster recovery lab using geo-replication, failover groups, and planned failover validation through the Azure Portal.
+Azure SQL Database active-passive disaster recovery setup using geo-replication, failover groups, and planned failover validation through the Azure Portal.
 
 > **Status:** Lab documentation in progress. Update every checkbox and result to reflect what you actually tested.
 Overview
