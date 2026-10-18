@@ -14,13 +14,13 @@ This project documents an active-passive disaster recovery setup across two Azur
                             |
                             v
                  Primary Azure SQL Database
-                         East US 2
+                         East Asia
                             |
                      Geo-replication
                             |
                             v
                 Secondary Azure SQL Database
-                         Central US
+                         Southeast Asia
 ```
 The failover-group read/write listener is the stable application endpoint. After failover, it directs connections to the current primary. Applications should connect through the listener rather than hard-coding a regional server endpoint.
 
@@ -35,8 +35,8 @@ The failover-group read/write listener is the stable application endpoint. After
 
 ## Deployment Outline
 
-* Create or select the primary SQL logical server and database in East US 2.
-* Create or select a secondary SQL logical server in Central US.
+* Create or select the primary SQL logical server and database in East Asia.
+* Create or select a secondary SQL logical server in Southeast Asia.
 * Configure cross-region geo-replication and the Auto-Failover Group.
 * Confirm replication and failover-group health.
 * Record the failover-group read/write listener endpoint (do not include credentials).
