@@ -27,23 +27,23 @@ The failover-group read/write listener is the stable application endpoint. After
 ## Goals
 
 * Configure a primary Azure SQL database and a secondary in another region.
-Configure and inspect the failover group.
-Identify the read/write listener endpoint.
-Perform a planned failover.
-Verify the new primary role and database connectivity.
-Document observations, limitations, and cleanup.
+* Configure and inspect the failover group.
+* Identify the read/write listener endpoint.
+* Perform a planned failover.
+* Verify the new primary role and database connectivity.
+* Document observations, limitations, and cleanup.
 
 ## Deployment Outline
 
-Create or select the primary SQL logical server and database in East US 2.
-Create or select a secondary SQL logical server in Central US.
-Configure cross-region geo-replication and the Auto-Failover Group.
-Confirm replication and failover-group health.
-Record the failover-group read/write listener endpoint (do not include credentials).
-Perform a planned failover through the Azure Portal.
-Verify which region is primary after the operation.
-Test database access through the listener.
-If appropriate, perform and document a controlled failback.
+* Create or select the primary SQL logical server and database in East US 2.
+* Create or select a secondary SQL logical server in Central US.
+* Configure cross-region geo-replication and the Auto-Failover Group.
+* Confirm replication and failover-group health.
+* Record the failover-group read/write listener endpoint (do not include credentials).
+* Perform a planned failover through the Azure Portal.
+* Verify which region is primary after the operation.
+* Test database access through the listener.
+* If appropriate, perform and document a controlled failback.
 
 ## Validation Checklist
 [x] Primary and secondary regions configured
