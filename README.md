@@ -46,12 +46,12 @@ The failover-group read/write listener is the stable application endpoint. After
 * If appropriate, perform and document a controlled failback.
 
 ## Validation Checklist
-[x] Primary and secondary regions configured
-[x] Failover group created and health checked
-[x] Planned failover performed
-[x] New primary role verified
-[ ] Application connectivity tested through the read/write listener
-[x] Failback tested and documented
+* [x] Primary and secondary regions configured
+* [x] Failover group created and health checked
+* [x] Planned failover performed
+* [x] New primary role verified
+* [ ] Application connectivity tested through the read/write listener
+* [x] Failback tested and documented
 
 
 
